@@ -1,0 +1,84 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: black;
+$headingColor: $mainColor;
+
+$mainFontSize: 38px;
+$mainFont: Arial, sans-serif;
+$headingFont: Arial, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: normal;
+$headingFontWeight: 600;
+$linkColor: #A47C18;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+    &, h1, h2, h3, h4, h5, h6 {
+        color: #fff;
+    }
+}
+
+#cover {
+    h1, h2, h3 {
+        color: white;
+        text-align: left;
+    }
+    h1 {
+        background: adjust-color( $linkColor, $alpha: -0.3 );
+    }
+    h3 {
+        background: black;
+    }
+}
+
+#logo-cic {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2.78em;
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal {
+    h1, h2, h3, p {
+        text-align: left;
+        text-align: left;
+    }
+    pre {
+        margin-left: 0;
+        width: 100%;
+    };
+    ul, ol {
+        display: block;
+    }
+}
+
+
