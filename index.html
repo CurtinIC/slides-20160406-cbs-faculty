@@ -1,413 +1,423 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+        <title>Your digital research toolbox</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/curtin.css" id="theme">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/curtin.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
 
-	<body>
+    <body>
 
-		<div class="reveal">
+        <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-                        <div class="slides">
-                            <img id="logo-cic" src="images/computation_logo.svg">
-                            <section id="cover" data-background="images/background.jpg">
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <img id="logo-cic" src="images/computation_logo.svg" alt="Curtin Institute for Computation">
+                <section id="cover" data-background="images/background.jpg">
+                    <h2>Your digital research toolbox</h2>
+                    <h3>Andrea Bedini, Curtin Institute for Computation,
+                        <a href="https://twitter.com/andreabedini">@andreabedini</a>
+                    </h3>
+                </section>
 
-                                <h1>Reveal.js</h1>
-                                <h3>The HTML Presentation Framework</h3>
-                                <p>
-                                <small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-                                </p>
-                            </section>
+                <section>
+                    <section>
+                        <h2>Who am I?</h2>
+                    </section>
 
-                            <section>
-                                <h2>Hello There</h2>
-                                <p>
-                                reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-                                </p>
-                            </section>
+                    <section>
+                        <ul>
+                            <li>PhD in Physics @ Universit&agrave; di Milano in 2010</li>
+                            <li>Postdoc @ UniMelb 2010&ndash;2015</li>
+                            <li>Lots of numerical research work<br>
+                                <small>mathematical combinatorics/statistical physics/genomics/traffic modelling</small>
+                            </li>
+                            <li>Self-taught programmer / Open Source contributor</li>
+                            <li>Joined Curtin University this year</li>
+                        </ul>
+                    </section>
+                </section>
 
-                            <!-- Example of nested vertical slides -->
-                            <section>
-                                <section>
-                                    <h2>Vertical Slides</h2>
-                                    <p>Slides can be nested inside of each other.</p>
-                                    <p>Use the <em>Space</em> key to navigate through all slides.</p>
-                                    <br>
-                                    <a href="#" class="navigate-down">
-                                        <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-                                    </a>
-                                </section>
-                                <section>
-                                    <h2>Basement Level 1</h2>
-                                    <p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-                                </section>
-                                <section>
-                                    <h2>Basement Level 2</h2>
-                                    <p>That's it, time to go back up.</p>
-                                    <br>
-                                    <a href="#/2">
-                                        <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-                                    </a>
-                                </section>
-                            </section>
-
-                            <section>
-                                <h2>Slides</h2>
-                                <p>
-                                Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-                                </p>
-                            </section>
-
-                            <section>
-                                <h2>Point of View</h2>
-                                <p>
-                                Press <strong>ESC</strong> to enter the slide overview.
-                                </p>
-                                <p>
-                                Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-                                </p>
-                            </section>
-
-                            <section>
-                                <h2>Touch Optimized</h2>
-                                <p>
-                                Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-                                </p>
-                            </section>
-
-                            <section data-markdown>
-                                <script type="text/template">
-## Markdown support
-
-                                                Write content using inline or external Markdown.
-                                                Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-                                                ```
-                                                <section data-markdown>
-                                                  ## Markdown support
-
-                                                  Write content using inline or external Markdown.
-                                                  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-                                                </section>
-                                                ```
-                                </script>
-                            </section>
-
-                            <section>
-                                <section id="fragments">
-                                    <h2>Fragments</h2>
-                                    <p>Hit the next arrow...</p>
-                                    <p class="fragment">... to step through ...</p>
-                                    <p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-                                    <aside class="notes">
-                                        This slide has fragments which are also stepped through in the notes window.
-                                    </aside>
-                                </section>
-                                <section>
-                                    <h2>Fragment Styles</h2>
-                                    <p>There's different types of fragments, like:</p>
-                                    <p class="fragment grow">grow</p>
-                                    <p class="fragment shrink">shrink</p>
-                                    <p class="fragment fade-out">fade-out</p>
-                                    <p class="fragment current-visible">current-visible</p>
-                                    <p class="fragment highlight-red">highlight-red</p>
-                                    <p class="fragment highlight-blue">highlight-blue</p>
-                                </section>
-                            </section>
-
-                            <section id="transitions">
-                                <h2>Transition Styles</h2>
-                                <p>
-                                You can select from different transitions, like: <br>
-                                <a href="?transition=none#/transitions">None</a> -
-                                <a href="?transition=fade#/transitions">Fade</a> -
-                                <a href="?transition=slide#/transitions">Slide</a> -
-                                <a href="?transition=convex#/transitions">Convex</a> -
-                                <a href="?transition=concave#/transitions">Concave</a> -
-                                <a href="?transition=zoom#/transitions">Zoom</a>
-                                </p>
-                            </section>
-
-                            <section id="themes">
-                                <h2>Themes</h2>
-                                <p>
-                                reveal.js comes with a few themes built in: <br>
-                                <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-                                <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-                                <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-                                <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-                                <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-                                <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-                                <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-                                <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-                                <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-                                <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-                                <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-                                <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-                                </p>
-                            </section>
-
-                            <section>
-                                <section data-background="#dddddd">
-                                    <h2>Slide Backgrounds</h2>
-                                    <p>
-                                    Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-                                    </p>
-                                    <a href="#" class="navigate-down">
-                                        <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-                                    </a>
-                                </section>
-                                <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-                                    <h2>Image Backgrounds</h2>
-                                    <pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-                                </section>
-                                <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-                                    <h2>Tiled Backgrounds</h2>
-                                    <pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-                                </section>
-                                <section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-                                    <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-                                        <h2>Video Backgrounds</h2>
-                                        <pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-                                    </div>
-                                </section>
-                                <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-                                    <h2>... and GIFs!</h2>
-                                </section>
-                            </section>
-
-                            <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-                                <h2>Background Transitions</h2>
-                                <p>
-                                Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-                                </p>
-                                <pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-                            </section>
-
-                            <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-                                <h2>Background Transitions</h2>
-                                <p>
-                                You can override background transitions per-slide.
-                                </p>
-                                <pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-                            </section>
-
-                            <section>
-                                <h2>Pretty Code</h2>
-                                <pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-                                </code></pre>
-                                <p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-                            </section>
-
-                            <section>
-                                <h2>Marvelous List</h2>
+                <section>
+                    <section>
+                        <h2>Curtin Institute for Computation</h2>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Started last year</li>
+                            <li>Gathers ~70 researchers</li>
+                            <li>Truly interdisciplinary
                                 <ul>
-                                    <li>No order here</li>
-                                    <li>Or here</li>
-                                    <li>Or here</li>
-                                    <li>Or here</li>
+                                    <li>Humanities</li>
+                                    <li>Health</li>
+                                    <li>Science &amp; Engineering</li>
+                                    <li>Business School</li>
                                 </ul>
-                            </section>
-
-                            <section>
-                                <h2>Fantastic Ordered List</h2>
-                                <ol>
-                                    <li>One is smaller than...</li>
-                                    <li>Two is smaller than...</li>
-                                    <li>Three!</li>
-                                </ol>
-                            </section>
-
-                            <section>
-                                <h2>Tabular Tables</h2>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Item</th>
-                                            <th>Value</th>
-                                            <th>Quantity</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Apples</td>
-                                            <td>$1</td>
-                                            <td>7</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Lemonade</td>
-                                            <td>$2</td>
-                                            <td>18</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Bread</td>
-                                            <td>$3</td>
-                                            <td>2</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </section>
-
-                            <section>
-                                <h2>Clever Quotes</h2>
-                                <p>
-                                These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-                                    &ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-                                </p>
-                                <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-                                    &ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-                                    reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-                                </blockquote>
-                            </section>
-
-                            <section>
-                                <h2>Intergalactic Interconnections</h2>
-                                <p>
-                                You can link between slides internally,
-                                <a href="#/2/3">like this</a>.
-                                </p>
-                            </section>
-
-                            <section>
-                                <h2>Speaker View</h2>
-                                <p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-                                <p>Press the <em>S</em> key to try it out.</p>
-
-                                <aside class="notes">
-                                    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-                                </aside>
-                            </section>
-
-                            <section>
-                                <h2>Export to PDF</h2>
-                                <p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-                                <iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-                            </section>
-
-                            <section>
-                                <h2>Global State</h2>
-                                <p>
-                                Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-                                will be added as a class to the document element when the slide is open. This lets you
-                                apply broader style changes, like switching the page background.
-                                </p>
-                            </section>
-
-                            <section data-state="customevent">
-                                <h2>State Events</h2>
-                                <p>
-                                Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-                                </p>
-                                <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-        console.log( '"customevent" has fired' );
-} );
-                                </code></pre>
-                            </section>
-
-                            <section>
-                                <h2>Take a Moment</h2>
-                                <p>
-                                Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-                                </p>
-                            </section>
-
-                            <section>
-                                <h2>Much more</h2>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Foster collaboration to solve complex problems using
                                 <ul>
-                                    <li>Right-to-left support</li>
-                                    <li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-                                    <li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-                                    <li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-                                    <li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+                                    <li>computational modelling</li>
+                                    <li>data analysis</li>
+                                    <li>data visualisation</li>
                                 </ul>
-                            </section>
+                            </li>
+                            <li>Help to access and utilise existing facilities<br>e.g. Pawsey,
+                                HIVE, Nectar Research Cloud</li>
+                            <li>Provide basic computing and data skills training</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <p>Team of computational specialists hired to help researchers</p>
+                        <ul>
+                            <li>Rebecca Lange (Humanitiles)</li>
+                            <li>Kevin Chai (Health)</li>
+                            <li>Shiv Meka (Sci&amp;Eng)</li>
+                            <li>Andrea Bedini (Business School) <em>me!</em></li>
+                        </ul>
+                    </section>
+                </section>
 
-                            <section style="text-align: left;">
-                                <h1>THE END</h1>
-                                <p>
-                                - <a href="http://slides.com">Try the online editor</a> <br>
-                                - <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-                                </p>
-                            </section>
+                <section>
+                    <section>
+                        <h2>Your digital research toolbox</h2>
+                    </section>
 
-                        </div>
+                    <section>
+                        <ul>
+                            <li>IT is changing how people do research</li>
+                            <li>Researchers today:
+                                <ul>
+                                    <li>compute</li>
+                                    <li>visualise</li>
+                                    <li>collaborate (faster, larger groups)</li>
+                                    <li>collect/manage data (in larger quantites)</li>
+                                    <li>write software</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        Many students start PhDs at Curtin without even the most basic of computing and data skills
+                        <br><br>
+                        <span class="fragment"><small>And it's not their fault ...</small></span>
+                        <br><br>
+                        <span class="fragment fade-in">
+                            <em>Using Excel won't give you an edge anymore!</em>
+                        </span>
+                    </section>
+                </section>
 
-		</div>
+                <section>
+                    <section>
+                        <h2>What should you be in your toolbox?</h2>
+                    </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+                    <section>
+                        <ul>
+                            <li>One programming language
+                                <ul>
+                                    <li>Python and R are great choices and will take you
+                                        <b>very</b> far
+                                        <p><small><a href="https://nbviewer.jupyter.org/github/bokeh/bokeh-notebooks/blob/master/gallery/correlation.ipynb">Python Demo 1</a>, <a href="http://nbviewer.jupyter.org/github/bokeh/bokeh-notebooks/blob/master/gallery/texas.ipynb">Python Demo 2</a></small></p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Two data wrangling skills
+                                <ul>
+                                    <li>Manage possibly large datasets
+                                        <p><small><a href="http://grouplens.org/datasets/movielens/">MovieLens</a></small></p>
+                                    </li>
+                                    <li>Know what a database is and when you need it
+                                        <p><small>Often a big CSV file is enough</small></p>
+                                        <small><code>
+                                                Year,Make,Model,Description,Price<br>
+                                                1997,Ford,E350,,3000<br>
+                                                1999,Chevy,Extended Edition,,4900<br>
+                                                1999,Chevy,Extended Edition,,5000<br>
+                                                1996,Jeep,Grand Cherokee,"MUST SELL!",4799<br>
+                                                ...
+                                        </code></small>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Three web skills
+                                <ul>
+                                    <li>Have a website or a blog
+                                        <p><small><a href="https://pages.github.com">Github Pages</a>, <a href="https://medium.com">Medium</a>, <a href="https://wordpress.com">Wordpress</a></small></p></li>
+                                    <li>Talk about your research in 140 characters bites
+                                        <p><small><a href="https://docs.google.com/presentation/d/1cR2xF9qORF7o2gWffvakuz2ONFn8sb9WQkTq1nqtfQ0/pub?start=false&loop=false&delayms=10000&slide=id.g6e5e1d617_015">Social media for researchers side</a></small></li>
+                                        <li>Put your research on the web <p><small><a href="http://shiny.rstudio.com/gallery/movie-explorer.html">Movie explorer demo</a>, <a href="https://www.authorea.com/users/5641/articles/19382/_show_article">Authorea</a></small></p></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                        <em>If I can't Google you, you don't exist</em>
+                        <br>
+                    </section>
 
-		<script>
+                    <section>
+                        <script src="//d3js.org/d3.v3.min.js"></script>
+                        <script src="//bl.ocks.org/NPashaP/raw/9796212/8ed537693ddcb720b79cae93d979385c3c3b08c3/biPartite.js"></script>
+                        <div id="fancyplot"></div>
+                        <script type="text/javascript">
+                            var sales_data=[
+                                ['Lite','CA',16,0],
+                                ['Small','CA',1278,4],
+                                ['Medium','CA',27,0],
+                                ['Plus','CA',58,0],
+                                ['Grand','CA',1551,15],
+                                ['Elite','CA',141,0],
+                                ['Lite','AZ',5453,35],
+                                ['Small','AZ',683,1],
+                                ['Medium','AZ',862,0],
+                                ['Grand','AZ',6228,30],
+                                ['Lite','AL',15001,449],
+                                ['Small','AL',527,3],
+                                ['Medium','AL',836,0],
+                                ['Plus','AL',28648,1419],
+                                ['Grand','AL',3,0],
+                                ['Lite','CO',13,0],
+                                ['Small','CO',396,0],
+                                ['Medium','CO',362,0],
+                                ['Plus','CO',78,10],
+                                ['Grand','CO',2473,32],
+                                ['Elite','CO',2063,64],
+                                ['Medium','DE',203,0],
+                                ['Grand','DE',686,2],
+                                ['Elite','DE',826,0],
+                                ['Lite','KS',1738,110],
+                                ['Small','KS',12925,13],
+                                ['Medium','KS',15413,0],
+                                ['Small','GA',2166,2],
+                                ['Medium','GA',86,0],
+                                ['Plus','GA',348,3],
+                                ['Grand','GA',4244,18],
+                                ['Elite','GA',1536,1],
+                                ['Small','IA',351,0],
+                                ['Grand','IA',405,1],
+                                ['Small','IL',914,1],
+                                ['Medium','IL',127,0],
+                                ['Grand','IL',1470,7],
+                                ['Elite','IL',516,1],
+                                ['Lite','IN',43,0],
+                                ['Small','IN',667,1],
+                                ['Medium','IN',172,0],
+                                ['Plus','IN',149,1],
+                                ['Grand','IN',1380,5],
+                                ['Elite','IN',791,23],
+                                ['Small','FL',1,0],
+                                ['Grand','FL',1,0],
+                                ['Small','MD',1070,1],
+                                ['Grand','MD',1171,2],
+                                ['Elite','MD',33,0],
+                                ['Plus','TX',1,0],
+                                ['Small','MS',407,0],
+                                ['Medium','MS',3,0],
+                                ['Grand','MS',457,2],
+                                ['Elite','MS',20,0],
+                                ['Small','NC',557,0],
+                                ['Medium','NC',167,0],
+                                ['Plus','NC',95,1],
+                                ['Grand','NC',1090,5],
+                                ['Elite','NC',676,6],
+                                ['Lite','NM',1195,99],
+                                ['Small','NM',350,3],
+                                ['Medium','NM',212,0],
+                                ['Grand','NM',1509,8],
+                                ['Lite','NV',3899,389],
+                                ['Small','NV',147,0],
+                                ['Medium','NV',455,0],
+                                ['Plus','NV',1,1],
+                                ['Grand','NV',4100,16],
+                                ['Lite','OH',12,0],
+                                ['Small','OH',634,2],
+                                ['Medium','OH',749,0],
+                                ['Plus','OH',119,1],
+                                ['Grand','OH',3705,19],
+                                ['Elite','OH',3456,25],
+                                ['Small','PA',828,2],
+                                ['Medium','PA',288,0],
+                                ['Plus','PA',141,0],
+                                ['Grand','PA',2625,7],
+                                ['Elite','PA',1920,10],
+                                ['Small','SC',1146,2],
+                                ['Medium','SC',212,0],
+                                ['Plus','SC',223,4],
+                                ['Grand','SC',1803,6],
+                                ['Elite','SC',761,8],
+                                ['Small','TN',527,0],
+                                ['Medium','TN',90,0],
+                                ['Grand','TN',930,4],
+                                ['Elite','TN',395,1],
+                                ['Lite','ME',7232,58],
+                                ['Small','ME',1272,0],
+                                ['Medium','ME',1896,0],
+                                ['Plus','ME',1,0],
+                                ['Grand','ME',10782,33],
+                                ['Elite','ME',1911,3],
+                                ['Small','VA',495,0],
+                                ['Medium','VA',32,0],
+                                ['Plus','VA',7,0],
+                                ['Grand','VA',1557,12],
+                                ['Elite','VA',24,0],
+                                ['Small','WA',460,1],
+                                ['Plus','WA',88,3],
+                                ['Grand','WA',956,3],
+                                ['Small','WV',232,0],
+                                ['Medium','WV',71,0],
+                                ['Grand','WV',575,2],
+                                ['Elite','WV',368,3]
+                            ];
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+                            var width = 1100, height = 610, margin ={b:0, t:40, l:170, r:50};
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+                            var svg = d3.select("#fancyplot")
+                            .append("svg").attr('width',width).attr('height',(height+margin.b+margin.t))
+                            .append("g").attr("transform","translate("+ margin.l+","+margin.t+")");
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+                            var data = [
+                                {data:bP.partData(sales_data,3), id:'Sales', header:["Channel","State", "Sales"]}
+                            ];
 
-		</script>
+                            bP.draw(data, svg);
+                        </script>
+                        <style>
+                            #fancyplot > svg text{
+                                font-size:12px;
+                            }
+                            #fancyplot > rect{
+                                shape-rendering:crispEdges;
+                            }
+                        </style>
+                    </section>
+                </section>
 
-	</body>
+                <section>
+                    <section>
+                        <img class="plain" src="images/allthethings.jpeg">
+                    </section>
+
+                    <section>
+                        <img class="plain" width="40%" alt="Software Carpentry" src="images/software-carpentry-logo.svg">
+                        <small>
+                            Unix Shell &bull; Version Control with Git &bull;
+                            Using Databases and SQL &bull; Programming with Python
+                            &bull; Programming with R &bull; R for Reproducible
+                            Scientific Analysis &bull; Automation and Make
+                        </small>
+                        <br>
+                        <br>
+                        <img class="plain" width="40%" alt="Data Carpentry" src="images/DC2_logo.jpg">
+                        <small>
+                            Data Cleaning &bull;
+                            Data Analysis and Visualization in Python/R &bull;
+                            Data wrangling and processing &bull;
+                            Geospatial Data &bull;
+                            Social sciences text mining
+                        </small>
+                        <br><br>
+                        <h4>
+                            Training sessions coming soon
+                        </h4>
+                    </section>
+
+                    <section>
+                        <h3>Hacky Hour</h3>
+                        <ul>
+                            <li>Every Wednesday 3pm at Common Ground</li>
+                            <li>Follow us on Twitter: <a href="https://twitter.com/CUHackyHour">@CUHackyHour</a></li>
+                        </ul>
+                        <img class="plain" alt="Hackyhour picture" src="images/Cb9piKiW0AAir19.jpg-large.jpeg" width="40%">
+                        <img class="plain" alt="Hackyhour picture"
+                        src="images/Cex5AWdWQAAHAZn.jpg-large.jpeg" width="40%">
+                    </section>
+                    <section>
+                        <h3>Research morning tea</h3>
+                        <ul>
+                            <li>Monthly at CIC - Building 216 Level 2</li>
+                            <li>Contact <a href="mailto:rebecca.lange@curtin.edu.au">Rebecca Lange</a></li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <h3>Questions / Feedback</h3>
+
+                    <ul>
+                        <li>What data problems do you have?</li>
+                        <li>What is your workflow?</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true }
+            ]
+        });
+
+        </script>
+
+    </body>
 </html>
